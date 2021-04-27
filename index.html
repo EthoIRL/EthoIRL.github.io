@@ -7,14 +7,45 @@
         <script src="Script.js"></script> 
         <title>EthoIRL Projects</title>
     </head>
-    <body class="background">
-        <div class="TopCenter-Screen">
-            <h1 class="ProjectFont">Projects</h1>
-            <!-- <button class="ProjectButton" style="vertical-align:middle;" onclick="location.href='./Projects/Violent/ViolentHP.html' "><span>Violent 1.7.* - 1.12.* Anticheat</span></button> -->
-            <a class="ProjectButton" style="vertical-align:middle;" href="#Violent"><span>Violent 1.7.* - 1.12.* Anticheat</span></a>
-            <a class="ProjectButton" style="vertical-align:middle;" href="#Vert"><span>Vert Forge 1.8.9 Client</span></a>
-            <a class="ProjectButton" style="vertical-align:middle;" href="#Information"><span>Information</span></a>
+    <body>
+        <div class="flex-container">
+            <div onclick="window.location.href='#Violent'">
+                <img src="./Pictures/1.png" style="width: 100%; height: 60%; display: block;">
+                
+                <p class="Nunito-Regular" style="font-size: 24px;">
+                    Violent - Anticheat
+                    <center>
+                        <p class="Nunito-Regular" style="font-size: 16px;">
+                            1.7 - 1.12.* Minecraft Anticheat
+                        </p>
+                    </center>
+                </p>
+            </div>
 
+            <div onclick="window.location.href='#Vert'">
+                <!-- <div style="float: left;">
+                    <img src="name3.png" style="width:100%;">
+                </div>
+                <div style="float: left;"> 
+                    <img src="name3.png" style="width:100%;">
+                </div> -->
+                <img src="./Pictures/2.png" style="width: 100%; height: 60%; display: block;">
+                
+                <p class="Nunito-Regular" style="font-size: 24px;">
+                    Vert - Client
+                    <center>
+                        <p class="Nunito-Regular" style="font-size: 16px;">
+                            1.8.9 Minecraft Hacked Client
+                        </p>
+                    </center>
+                </p>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="about-container" onclick="window.location.href='#Information'">
+                <h1 class="SourceSansPro">About</h1>
+            </div>
         </div>
 
         <div id="Violent" class="overlay">
@@ -84,11 +115,6 @@
                 </div>
 
             </div>
-        </div>
-
-
-        <div class="BottomCenter-Screen">
-            <h1 class="SourceSansPro">I'm not a web developer.</h1>
         </div>
     </body>
 </html>
