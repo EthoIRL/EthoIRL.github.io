@@ -21,102 +21,119 @@
                     </center>
                 </p>
             </div>
-
-            <div onclick="window.location.href='#Vert'">
-                <!-- <div style="float: left;">
-                    <img src="name3.png" style="width:100%;">
-                </div>
-                <div style="float: left;"> 
-                    <img src="name3.png" style="width:100%;">
-                </div> -->
-                <img src="./Pictures/2.png" style="width: 100%; height: 60%; display: block;">
-                
-                <p class="Nunito-Regular" style="font-size: 24px;">
-                    Vert - Client
-                    <center>
-                        <p class="Nunito-Regular" style="font-size: 16px;">
-                            1.8.9 Minecraft Hacked Client
-                        </p>
-                    </center>
-                </p>
-            </div>
         </div>
 
-        <div class="">
-            <div class="about-container" onclick="window.location.href='#Information'">
-                <h1 class="SourceSansPro">About</h1>
+        <div>
+            <div class="about-container" onclick="window.location.href='#About'">
+                <svg class="svg-icon" viewBox="0 0 20 20">
+                    <path fill="black" d="M14.023,12.154c1.514-1.192,2.488-3.038,2.488-5.114c0-3.597-2.914-6.512-6.512-6.512
+                        c-3.597,0-6.512,2.916-6.512,6.512c0,2.076,0.975,3.922,2.489,5.114c-2.714,1.385-4.625,4.117-4.836,7.318h1.186
+                        c0.229-2.998,2.177-5.512,4.86-6.566c0.853,0.41,1.804,0.646,2.813,0.646c1.01,0,1.961-0.236,2.812-0.646
+                        c2.684,1.055,4.633,3.568,4.859,6.566h1.188C18.648,16.271,16.736,13.539,14.023,12.154z M10,12.367
+                        c-2.943,0-5.328-2.385-5.328-5.327c0-2.943,2.385-5.328,5.328-5.328c2.943,0,5.328,2.385,5.328,5.328
+                        C15.328,9.982,12.943,12.367,10,12.367z">
+                    </path>
+                </svg>
+                
+                <h1 class="SourceSansPro svg-text">About</h1>
             </div>
         </div>
 
         <div id="Violent" class="overlay">
-            <div class="click-overlay" onclick="window.location.href=''"></div>
+            <div class="click-overlay" onclick="window.location.href='#'"></div>
             <div class="popup">
-                <h2>Violent - Anticheat</h2>
-                <a class="close" href="">&times;</a>
-                
-                <h3>About:</h3>
-                <div class="content">
-                    Violent is a Minecraft 1.7.* - 1.12.* anticheat.  
-                </div>
-                
-                <h3>Discord:</h3>
-                <div class="content">
-                    Check out Violent's discord for updates / roadmap on the Anticheat <a href="https://discord.com">here!</a>
+                <h2 style="margin-top: -5px;">Violent</h2>
+                <a class="close" href="#">&times;</a>
+
+                <div class="flex-navbar">
+                    <div onclick="toggleShown('ViolentAbout', ['ViolentAbout', 'ViolentMisc', 'ViolentDownload'])">
+                        <p class="Nunito-Regular" style="font-size: 20px;">
+                            About
+                        </p>
+                    </div>
+
+                    <div onclick="toggleShown('ViolentMisc', ['ViolentAbout', 'ViolentMisc', 'ViolentDownload'])">
+                        <p class="Nunito-Regular" style="font-size: 20px;">
+                            Misc
+                        </p>
+                    </div>
+
+                    <div onclick="window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank')">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="black" d="M17.206,5.45l0.271-0.27l-4.275-4.274l-0.27,0.269V0.9H3.263c-0.314,0-0.569,0.255-0.569,0.569v17.062
+								c0,0.314,0.255,0.568,0.569,0.568h13.649c0.313,0,0.569-0.254,0.569-0.568V5.45H17.206z M12.932,2.302L16.08,5.45h-3.148V2.302z
+								 M16.344,17.394c0,0.314-0.254,0.569-0.568,0.569H4.4c-0.314,0-0.568-0.255-0.568-0.569V2.606c0-0.314,0.254-0.568,0.568-0.568
+								h7.394v4.55h4.55V17.394z"></path>
+						</svg>
+
+                        <p class="Nunito-Regular svg-text" style="font-size: 20px;">
+                            Download
+                        </p>
+                    </div>
                 </div>
 
-                <h3>Support:</h3>
-                <div class="content">
-                    Violent is currently supported on main stream server cores. <br> <br>
-                    - Bukkit <br>
-                    - Spigot <br>
-                    - PaperSpigot <br>
-                    - TacoSpigot <br> <br>
-
-                    Violent doesn't require any dependencies to run since all of it's all packaged in!
+                <div id="ViolentAbout" style="display:block;">
+                    <div class="popup-sub-border">
+                        <center>
+                            <div class="Font1" style="font-size: 20px;"> <br> Violent is a Minecraft server side anticheat plugin developed using the Spigot plugin API for versions 1.7.X - 1.12.X</div>
+                        </center>
+                    </div>
                 </div>
 
-                <h3>Other:</h3>
-                <div class="content">
-                    Violent currently uses PacketEvents API for its packets. Check it out <a href="https://www.spigotmc.org/resources/packetevents-api.80279/">here!</a> 
+                <div id="ViolentMisc" style="display:none;">
+                    <div class="popup-sub-border">
+                        <center>
+                            <div class="Font1" style="font-size: 20px;"> 
+                                <br> Discord - <a target="_blank" rel="noopener noreferrer" href="httpsdiscord.gg/xUN4h7X7JJ"></a>discord.gg/xUN4h7X7JJ</a> <br>
+                                Test server - 167.86.81.183:7744
+                            </div>
+                        </center>
+                    </div>
                 </div>
 
-                <h3>Download:</h3>
-                <div class="content">
-                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ?autoplay=1">Latest download</a> for Violent's plugin loader.
+                <div id="ViolentDownload" style="display:none;">
                 </div>
             </div>
         </div>
 
-        <div id="Vert" class="overlay">
-            <div class="click-overlay" onclick="window.location.href=''"></div>
+        <div id="About" class="overlay">
+            <div class="click-overlay" onclick="window.location.href='#'"></div>
             <div class="popup">
-                <h2>Vert - Client</h2>
-                <a class="close" href="">&times;</a>
-
-                <h3>More information coming soon...</h3>
-            </div>
-        </div>
-
-        <div id="Information" class="overlay">
-            <div class="click-overlay" onclick="window.location.href=''"></div>
-            <div class="popup">
-                <h2>Information - EthoIRL</h2>
-                <a class="close" href="">&times;</a>
-                <h3>About:</h3>
-                <div class="content">
-                    I'm a software developer & security enthusiast.
+                <h2 style="margin-top: -5px;">EthoIRL</h2>
+                <a class="close" href="#">&times;</a>
+                
+                <div class="flex-navbar">
+                    <div onclick="toggleShown('AboutAbout', ['AboutAbout', 'AboutSocials'])">
+                        <p class="Nunito-Regular" style="font-size: 20px;">
+                            About
+                        </p>
+                    </div>
+                    <div onclick="toggleShown('AboutSocials', ['AboutAbout', 'AboutSocials'])">
+                        <p class="Nunito-Regular" style="font-size: 20px;">
+                            Socials
+                        </p>
+                    </div>
                 </div>
 
-                <h3>Discord:</h3>
-                <div class="content">
-                    EthoCryantic#2808
+                <div id="AboutAbout" style="display: block;">
+                    <div class="popup-sub-border">
+                        <div class="Font1" style="font-size: 20px; text-align: center;">
+                            Software developer. <br>
+                            Proficient in C# and Java. <br> <br> <br> <br>
+                            No clue how to make a decent website.
+                        </div>
+                    </div>
                 </div>
 
-                <h3>Youtube:</h3>
-                <div class="content">
-                    <a href="https://www.youtube.com/channel/UCmYcXo1FdNEofL9282WGqaw">Etho</a> - MC Hacking content mainly
+                <div id="AboutSocials" style="display: none;">
+                    <div class="popup-sub-border">
+                        <div class="Font1" style="font-size: 20px; text-align: center;">
+                            Steam - <a target="_blank" rel="noopener noreferrer" href="https://steamcommunity.com/id/EthoIRL/">Etho</a> <br>
+                            Youtube - <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCmYcXo1FdNEofL9282WGqaw">Etho</a> <br>
+                            Discord - <a target="_blank" rel="noopener noreferrer" href="https://discord.com/users/474717541483151361/">EthoCryantic#2808</a>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
     </body>
