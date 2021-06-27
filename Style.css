@@ -103,6 +103,11 @@ div.BottomCenter-Screen {
     display: flex;
     
     align-items: center;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .flex-navbar > div {
@@ -192,7 +197,7 @@ body {
     margin: 70px auto;
     padding: 20px;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 6px;
     width: 30%;
     position: relative;
 }
@@ -211,6 +216,11 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: #333;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .popup .close:hover {
@@ -238,13 +248,10 @@ body {
 
 
 .popup-sub-border {
-    min-height: 100px;
-    
     border-radius: 8px;
     background-color: rgb(241, 241, 241);
 
-    padding: 8px;
-    padding-left: 12px;
+    padding: 16px;
 }
 
 .Font1 {

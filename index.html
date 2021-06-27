@@ -47,13 +47,26 @@
 
                 <div class="flex-navbar">
                     <div onclick="toggleShown('ViolentAbout', ['ViolentAbout', 'ViolentMisc', 'ViolentDownload'])">
-                        <p class="Nunito-Regular" style="font-size: 20px;">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="black" d="M9.896,3.838L0.792,1.562v14.794l9.104,2.276L19,16.356V1.562L9.896,3.838z M9.327,17.332L1.93,15.219V3.27
+								l7.397,1.585V17.332z M17.862,15.219l-7.397,2.113V4.855l7.397-1.585V15.219z"></path>
+						</svg>
+                        
+                        <p class="Nunito-Regular svg-text" style="font-size: 20px;">
                             About
                         </p>
                     </div>
 
                     <div onclick="toggleShown('ViolentMisc', ['ViolentAbout', 'ViolentMisc', 'ViolentDownload'])">
-                        <p class="Nunito-Regular" style="font-size: 20px;">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="black" d="M18.378,1.062H3.855c-0.309,0-0.559,0.25-0.559,0.559c0,0.309,0.25,0.559,0.559,0.559h13.964v13.964
+								c0,0.309,0.25,0.559,0.559,0.559c0.31,0,0.56-0.25,0.56-0.559V1.621C18.938,1.312,18.688,1.062,18.378,1.062z M16.144,3.296H1.621
+								c-0.309,0-0.559,0.25-0.559,0.559v14.523c0,0.31,0.25,0.56,0.559,0.56h14.523c0.309,0,0.559-0.25,0.559-0.56V3.855
+								C16.702,3.546,16.452,3.296,16.144,3.296z M15.586,17.262c0,0.31-0.25,0.558-0.56,0.558H2.738c-0.309,0-0.559-0.248-0.559-0.558
+								V4.972c0-0.309,0.25-0.559,0.559-0.559h12.289c0.31,0,0.56,0.25,0.56,0.559V17.262z"></path>
+						</svg>
+                        
+                        <p class="Nunito-Regular svg-text" style="font-size: 20px;">
                             Misc
                         </p>
                     </div>
@@ -75,7 +88,9 @@
                 <div id="ViolentAbout" style="display:block;">
                     <div class="popup-sub-border">
                         <center>
-                            <div class="Font1" style="font-size: 20px;"> <br> Violent is a Minecraft server side anticheat plugin developed using the Spigot plugin API for versions 1.7.X - 1.12.X</div>
+                            <div class="Font1" style="font-size: 20px;"> 
+                                Violent is a Minecraft server side anticheat plugin developed using the Spigot plugin API for versions 1.7.X - 1.12.X
+                            </div>
                         </center>
                     </div>
                 </div>
@@ -84,7 +99,7 @@
                     <div class="popup-sub-border">
                         <center>
                             <div class="Font1" style="font-size: 20px;"> 
-                                <br> Discord - <a target="_blank" rel="noopener noreferrer" href="httpsdiscord.gg/xUN4h7X7JJ"></a>discord.gg/xUN4h7X7JJ</a> <br>
+                                Discord - <a target="_blank" rel="noopener noreferrer" href="httpsdiscord.gg/xUN4h7X7JJ"></a>discord.gg/xUN4h7X7JJ</a> <br>
                                 Test server - 167.86.81.183:7744
                             </div>
                         </center>
@@ -103,14 +118,41 @@
                 <a class="close" href="#">&times;</a>
                 
                 <div class="flex-navbar">
-                    <div onclick="toggleShown('AboutAbout', ['AboutAbout', 'AboutSocials'])">
-                        <p class="Nunito-Regular" style="font-size: 20px;">
+                    <div onclick="toggleShown('AboutAbout', ['AboutAbout', 'AboutSocials', 'AboutSite'])">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="black" d="M9.896,3.838L0.792,1.562v14.794l9.104,2.276L19,16.356V1.562L9.896,3.838z M9.327,17.332L1.93,15.219V3.27
+								l7.397,1.585V17.332z M17.862,15.219l-7.397,2.113V4.855l7.397-1.585V15.219z"></path>
+						</svg>
+                        
+                        <p class="Nunito-Regular svg-text" style="font-size: 20px;">
                             About
                         </p>
                     </div>
-                    <div onclick="toggleShown('AboutSocials', ['AboutAbout', 'AboutSocials'])">
-                        <p class="Nunito-Regular" style="font-size: 20px;">
+                    <div onclick="toggleShown('AboutSocials', ['AboutAbout', 'AboutSocials', 'AboutSite'])">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="black" d="M14.023,12.154c1.514-1.192,2.488-3.038,2.488-5.114c0-3.597-2.914-6.512-6.512-6.512
+								c-3.597,0-6.512,2.916-6.512,6.512c0,2.076,0.975,3.922,2.489,5.114c-2.714,1.385-4.625,4.117-4.836,7.318h1.186
+								c0.229-2.998,2.177-5.512,4.86-6.566c0.853,0.41,1.804,0.646,2.813,0.646c1.01,0,1.961-0.236,2.812-0.646
+								c2.684,1.055,4.633,3.568,4.859,6.566h1.188C18.648,16.271,16.736,13.539,14.023,12.154z M10,12.367
+								c-2.943,0-5.328-2.385-5.328-5.327c0-2.943,2.385-5.328,5.328-5.328c2.943,0,5.328,2.385,5.328,5.328
+								C15.328,9.982,12.943,12.367,10,12.367z"></path>
+						</svg>
+
+                        <p class="Nunito-Regular svg-text" style="font-size: 20px;">
                             Socials
+                        </p>
+                    </div>
+                    <div onclick="toggleShown('AboutSite', ['AboutAbout', 'AboutSocials', 'AboutSite'])">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="black" d="M3.015,4.779h1.164V3.615H3.015V4.779z M18.73,1.869H1.269c-0.322,0-0.582,0.26-0.582,0.582v15.133
+								c0,0.322,0.26,0.582,0.582,0.582H18.73c0.321,0,0.582-0.26,0.582-0.582V2.451C19.312,2.129,19.052,1.869,18.73,1.869z
+								 M18.148,16.42c0,0.322-0.261,0.582-0.582,0.582H2.433c-0.322,0-0.582-0.26-0.582-0.582V6.525h16.297V16.42z M18.148,5.361H1.851
+								V3.615c0-0.322,0.26-0.582,0.582-0.582h15.133c0.321,0,0.582,0.26,0.582,0.582V5.361z M7.671,4.779h1.165V3.615H7.671V4.779z
+								 M5.344,4.779h1.164V3.615H5.344V4.779z"></path>
+						</svg>
+                        
+                        <p class="Nunito-Regular svg-text" style="font-size: 20px;">
+                            Site
                         </p>
                     </div>
                 </div>
@@ -119,7 +161,7 @@
                     <div class="popup-sub-border">
                         <div class="Font1" style="font-size: 20px; text-align: center;">
                             Software developer. <br>
-                            Proficient in C# and Java. <br> <br> <br> <br>
+                            Proficient in C# and Java. <br> <br> <br>
                             No clue how to make a decent website.
                         </div>
                     </div>
@@ -131,6 +173,15 @@
                             Steam - <a target="_blank" rel="noopener noreferrer" href="https://steamcommunity.com/id/EthoIRL/">Etho</a> <br>
                             Youtube - <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCmYcXo1FdNEofL9282WGqaw">Etho</a> <br>
                             Discord - <a target="_blank" rel="noopener noreferrer" href="https://discord.com/users/474717541483151361/">EthoCryantic#2808</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="AboutSite" style="display: none;">
+                    <div class="popup-sub-border">
+                        <div class="Font1" style="font-size: 20px; text-align: center;">
+                            <a target="_blank" rel="noopener noreferrer" href="https://github.com/EthoIRL/EthoIRL.github.io">Source code!</a> <br> <br>
+                            Icons from <a target="_blank" rel="noopener noreferrer" href="http://svgicons.sparkk.fr/">sparkk</a>.
                         </div>
                     </div>
                 </div>
