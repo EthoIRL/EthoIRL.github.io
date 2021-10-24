@@ -1,0 +1,41 @@
+:root {
+    --sizing: 2.5%;
+    --nav-bar-margin: 1.5%;
+}
+
+.foreground {
+    background: rgb(16, 16, 16);
+
+    float: left;
+
+    height: calc(100% - calc(var(--sizing) * 2));
+    width: calc(100% - var(--sizing));
+    margin-top: calc(var(--sizing)/2);
+    margin-left: calc(var(--sizing)/2);
+    
+    border-radius: 8px;
+}
+
+.navbar {
+    background: #cc2b5e;
+    
+    /*background: rgb(12, 12, 12);*/
+    width: 100.25%;
+    height: 10%;
+    
+    display: flex;
+    align-items: center;
+}
+
+.navbar > div {
+    /*margin: 0 var(--nav-bar-margin) 0 var(--nav-bar-margin);*/
+}
+
+.navbar-button {
+    background-color: rgba(64, 64, 64, 0.4);
+    color: white;
+    border: none;
+    
+    /*border: transparent;*/
+    /*border-radius: px;*/
+}
